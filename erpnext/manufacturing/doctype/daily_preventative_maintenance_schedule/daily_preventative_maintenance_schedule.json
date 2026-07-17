@@ -1,0 +1,155 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "DPMS-.#####",
+ "creation": "2026-05-26 13:36:15.767754",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "area",
+  "column_break_vcfe",
+  "equipment",
+  "section_break_zzag",
+  "maintenance_details",
+  "computed_metrics",
+  "section_break_njzl",
+  "sign_of_the_operator",
+  "column_break_qwlo",
+  "sign_of_supervisor",
+  "remarks_section",
+  "overall_remarks",
+  "column_break_xxhl",
+  "amended_from",
+  "section_break_zsqn",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "area",
+   "fieldtype": "Link",
+   "label": "Area",
+   "options": "Area List"
+  },
+  {
+   "fieldname": "column_break_vcfe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "equipment",
+   "fieldtype": "Link",
+   "label": "Equipment",
+   "options": "Equipment List"
+  },
+  {
+   "fieldname": "section_break_zzag",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "maintenance_details",
+   "fieldtype": "Table",
+   "label": "Maintenance Details",
+   "options": "Daily PM Schedule Item"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Preventative Maintenance Schedule",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_njzl",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "sign_of_the_operator",
+   "fieldtype": "Link",
+   "label": "Sign Of the Operator",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_qwlo",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sign_of_supervisor",
+   "fieldtype": "Link",
+   "label": "Sign Of Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "remarks_section",
+   "fieldtype": "Section Break",
+   "label": "Remarks"
+  },
+  {
+   "fieldname": "overall_remarks",
+   "fieldtype": "Data",
+   "label": "Overall Remarks"
+  },
+  {
+   "fieldname": "column_break_xxhl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "computed_metrics",
+   "fieldtype": "Data",
+   "label": "Computed Metrics"
+  },
+  {
+   "fieldname": "section_break_zsqn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-15 21:57:36.476423",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Daily Preventative Maintenance Schedule",
+ "naming_rule": "Expression",
+ "owner": "tathagata.c@anantdv.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

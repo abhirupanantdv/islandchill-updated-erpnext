@@ -1,0 +1,216 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-08 15:33:10.708241",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "recall_initiated_by",
+  "product_name",
+  "column_break_kxsp",
+  "date",
+  "section_break_ezti",
+  "product_date_to_recall",
+  "total_amount_produced",
+  "column_break_petd",
+  "info_by",
+  "time_taken",
+  "section_break_aujt",
+  "cases_in_distribution",
+  "time_taken_2",
+  "column_break_ssxh",
+  "info_by_2",
+  "section_break_ztmm",
+  "cases_stock_on_hand",
+  "time_taken_1",
+  "column_break_ggif",
+  "info_by_1",
+  "total_time_required_obtaining_information",
+  "section_break_nrjr",
+  "details",
+  "total_time_required_obtaining_customer_information",
+  "total_time_required_obtaining_information_1",
+  "comments_or_issues_faced_to_obtain_any_information",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "recall_initiated_by",
+   "fieldtype": "Link",
+   "label": "Recall Initiated by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "product_name",
+   "fieldtype": "Data",
+   "label": "Product Name"
+  },
+  {
+   "fieldname": "column_break_kxsp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "section_break_ezti",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "product_date_to_recall",
+   "fieldtype": "Date",
+   "label": "Product Date to Recall"
+  },
+  {
+   "fieldname": "total_amount_produced",
+   "fieldtype": "Data",
+   "label": "Total Amount Produced"
+  },
+  {
+   "fieldname": "column_break_petd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "info_by",
+   "fieldtype": "Link",
+   "label": "Info by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "time_taken",
+   "fieldtype": "Data",
+   "label": "Time Taken"
+  },
+  {
+   "fieldname": "section_break_ztmm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cases_stock_on_hand",
+   "fieldtype": "Data",
+   "label": "Cases Stock On Hand"
+  },
+  {
+   "fieldname": "time_taken_1",
+   "fieldtype": "Data",
+   "label": "Time Taken"
+  },
+  {
+   "fieldname": "column_break_ggif",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "info_by_1",
+   "fieldtype": "Link",
+   "label": "Info By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "total_time_required_obtaining_information",
+   "fieldtype": "Data",
+   "label": "Total Time Required Obtaining Information"
+  },
+  {
+   "fieldname": "section_break_nrjr",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Table",
+   "label": "Details",
+   "options": "Mock ProductTable"
+  },
+  {
+   "fieldname": "total_time_required_obtaining_customer_information",
+   "fieldtype": "Data",
+   "label": "Total Time required obtaining Customer Information"
+  },
+  {
+   "fieldname": "total_time_required_obtaining_information_1",
+   "fieldtype": "Data",
+   "label": "Total Time required obtaining Information"
+  },
+  {
+   "fieldname": "comments_or_issues_faced_to_obtain_any_information",
+   "fieldtype": "Small Text",
+   "label": "Comments or Issues Faced to Obtain Any Information"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Mock Product Recall",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_aujt",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "cases_in_distribution",
+   "fieldtype": "Data",
+   "label": "Cases in Distribution"
+  },
+  {
+   "fieldname": "time_taken_2",
+   "fieldtype": "Data",
+   "label": "Time Taken"
+  },
+  {
+   "fieldname": "column_break_ssxh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "info_by_2",
+   "fieldtype": "Link",
+   "label": "Info By",
+   "options": "Employee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-18 22:02:06.822412",
+ "modified_by": "tathagata.c@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Mock Product Recall",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

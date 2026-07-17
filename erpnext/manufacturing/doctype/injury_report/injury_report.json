@@ -1,0 +1,740 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 17:17:50.076023",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "first_aid_section",
+  "date",
+  "verified_by",
+  "column_break_tpdn",
+  "time",
+  "sign",
+  "section_break_vopn",
+  "employee__person_injured",
+  "type_of_injury",
+  "causes_of_injury",
+  "first_aid_treatment_given",
+  "first_aid_given_by",
+  "further_treatment_if_any",
+  "section_break_eful",
+  "personal_details_column",
+  "name_of_injured_person",
+  "first_name",
+  "sex",
+  "residential_address",
+  "occupational_job_title",
+  "workplace_relationship",
+  "employment_status",
+  "time_and_date_of_accidentdiseaseincident",
+  "type_of_incident",
+  "agency_of_accidentincidentdisease",
+  "how_and_where_did_accidentdiseaseincident_happen",
+  "description_and_location_of_personal_damage",
+  "corrective_action_identified",
+  "column_break_htrc",
+  "surname",
+  "other_name",
+  "date_of_birth",
+  "how_long_in_this_occupation_years",
+  "months",
+  "days",
+  "date_of_action_taken",
+  "medical_treatment",
+  "name_of_medical_practitioner",
+  "employer__principal_contractor",
+  "date_notified_to_chief_inspector",
+  "period_of_incapacity_months",
+  "period_of_incapacity_years",
+  "period_of_incapacity_days",
+  "employee_signature",
+  "signature_date",
+  "employee_information_section",
+  "registered_company_name",
+  "trading_name",
+  "main_activity_at_workplace",
+  "number_of_employees_at_site",
+  "ohs_committee_at_workplace",
+  "column_break_sthj",
+  "registered_office_address",
+  "workplace__accident_location",
+  "injured__ill_person_details_section",
+  "sur_name",
+  "given_names",
+  "employee_of_company",
+  "column_break_spga",
+  "sex_type",
+  "dob",
+  "basis_of_employment_section",
+  "shift_arrangement",
+  "number_of_hours_section",
+  "working_hours",
+  "job_details_section",
+  "occupation__job_title",
+  "column_break_jdyl",
+  "main_task_performed",
+  "training_provided_section",
+  "induction_training",
+  "task_specific_training",
+  "column_break_kfic",
+  "no_training",
+  "both_training_types",
+  "details_of_injury_or_disease_section",
+  "date_reported",
+  "time_of_injurydisease",
+  "nature_of_injurydisease",
+  "body_location_of_injury",
+  "workplace_area_of_occurrence",
+  "how_injury_was_sustained",
+  "unexpected_event_description",
+  "column_break_vaso",
+  "activity_being_performed",
+  "description_of_occurrence",
+  "outcome_of_injurydisease_section",
+  "employees_preferred_language",
+  "employment_type",
+  "other_employment_type",
+  "work_experience_years",
+  "work_experience_months",
+  "form_completed_by",
+  "position",
+  "rehabilitation_required",
+  "outcome_of_injurydisease",
+  "column_break_ppgd",
+  "wage__salary_earner",
+  "trainee",
+  "pieceworker",
+  "outworker",
+  "apprentice",
+  "self_employed",
+  "contractor__subcontractor",
+  "signature",
+  "date_completed",
+  "rehabilitation_start_date",
+  "section_break_ryla",
+  "preventative_actions",
+  "section_break_eqso",
+  "date_of_resumption_of_work",
+  "column_break_oauh",
+  "total_working_days_lost",
+  "tab_2_tab"
+ ],
+ "fields": [
+  {
+   "fieldname": "first_aid_section",
+   "fieldtype": "Section Break",
+   "label": "First Aid"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_tpdn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Signature",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "section_break_vopn",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee__person_injured",
+   "fieldtype": "Link",
+   "label": "Employee / Person Injured",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "type_of_injury",
+   "fieldtype": "Select",
+   "label": "Type of Injury",
+   "options": "\nMinor (small cuts, bruises, etc.)\nSerious (major injury such as fracture)\nNeed Immediate Medical Attention"
+  },
+  {
+   "fieldname": "causes_of_injury",
+   "fieldtype": "Small Text",
+   "label": "Cause(s) of Injury"
+  },
+  {
+   "fieldname": "first_aid_treatment_given",
+   "fieldtype": "Small Text",
+   "label": "First Aid Treatment Given"
+  },
+  {
+   "fieldname": "first_aid_given_by",
+   "fieldtype": "Link",
+   "label": "First Aid Given By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "further_treatment_if_any",
+   "fieldtype": "Small Text",
+   "label": "Further Treatment (if any)"
+  },
+  {
+   "fieldname": "section_break_eful",
+   "fieldtype": "Section Break",
+   "label": "Record of Accidents And Other Matters"
+  },
+  {
+   "fieldname": "personal_details_column",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "name_of_injured_person",
+   "fieldtype": "Link",
+   "label": "Name of Injured Person",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "surname",
+   "fieldtype": "Data",
+   "label": "Surname"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "label": "First Name"
+  },
+  {
+   "fieldname": "other_name",
+   "fieldtype": "Data",
+   "label": "Other Name"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "residential_address",
+   "fieldtype": "Small Text",
+   "label": "Residential Address"
+  },
+  {
+   "fieldname": "date_of_birth",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "occupational_job_title",
+   "fieldtype": "Data",
+   "label": "Occupational Job Title"
+  },
+  {
+   "fieldname": "how_long_in_this_occupation_years",
+   "fieldtype": "Int",
+   "label": "How Long in this Occupation (Years)"
+  },
+  {
+   "fieldname": "months",
+   "fieldtype": "Int",
+   "label": "How Long in this Occupation(Months)"
+  },
+  {
+   "fieldname": "days",
+   "fieldtype": "Int",
+   "label": "How Long in this Occupation(Days)"
+  },
+  {
+   "fieldname": "workplace_relationship",
+   "fieldtype": "Data",
+   "label": "Workplace Relationship"
+  },
+  {
+   "fieldname": "employment_status",
+   "fieldtype": "Select",
+   "label": "Employment Status",
+   "options": "\nPermanent\nTemporary\nContract\nCasual\nPart Time\nFull Time"
+  },
+  {
+   "fieldname": "time_and_date_of_accidentdiseaseincident",
+   "fieldtype": "Datetime",
+   "label": "Time and Date of Accident/Disease/Incident"
+  },
+  {
+   "fieldname": "type_of_incident",
+   "fieldtype": "Select",
+   "label": "Type of Incident",
+   "options": "\nAccident\nDisease\nNear Miss\nInjury\nProperty Damage\nOther"
+  },
+  {
+   "fieldname": "agency_of_accidentincidentdisease",
+   "fieldtype": "Data",
+   "label": "Agency of Accident/Incident/Disease"
+  },
+  {
+   "fieldname": "how_and_where_did_accidentdiseaseincident_happen",
+   "fieldtype": "Small Text",
+   "label": "How and Where Did Accident/Disease/Incident Happen?"
+  },
+  {
+   "fieldname": "description_and_location_of_personal_damage",
+   "fieldtype": "Text Editor",
+   "label": "Description and Location of Personal Damage"
+  },
+  {
+   "fieldname": "corrective_action_identified",
+   "fieldtype": "Small Text",
+   "label": "Corrective Action Identified"
+  },
+  {
+   "fieldname": "date_of_action_taken",
+   "fieldtype": "Date",
+   "label": "Date of Action Taken"
+  },
+  {
+   "default": "0",
+   "fieldname": "medical_treatment",
+   "fieldtype": "Check",
+   "label": "Medical Treatment"
+  },
+  {
+   "fieldname": "name_of_medical_practitioner",
+   "fieldtype": "Data",
+   "label": "Name of Medical Practitioner"
+  },
+  {
+   "fieldname": "date_notified_to_chief_inspector",
+   "fieldtype": "Date",
+   "label": "Date Notified to Chief Inspector"
+  },
+  {
+   "fieldname": "period_of_incapacity_years",
+   "fieldtype": "Int",
+   "label": "Period of Incapacity (Years)"
+  },
+  {
+   "fieldname": "period_of_incapacity_months",
+   "fieldtype": "Int",
+   "label": "Period of Incapacity (Months)"
+  },
+  {
+   "fieldname": "period_of_incapacity_days",
+   "fieldtype": "Int",
+   "label": "Period of Incapacity (Days)"
+  },
+  {
+   "fieldname": "employer__principal_contractor",
+   "fieldtype": "Data",
+   "label": "Employer / Principal Contractor"
+  },
+  {
+   "fieldname": "employee_signature",
+   "fieldtype": "Signature",
+   "label": "Employee Signature"
+  },
+  {
+   "fieldname": "signature_date",
+   "fieldtype": "Date",
+   "label": "Signature Date"
+  },
+  {
+   "fieldname": "employee_information_section",
+   "fieldtype": "Section Break",
+   "label": "WorkPlace Injury And Disease Notification Form"
+  },
+  {
+   "fieldname": "registered_company_name",
+   "fieldtype": "Link",
+   "label": "Registered Company Name",
+   "options": "Company"
+  },
+  {
+   "fieldname": "trading_name",
+   "fieldtype": "Data",
+   "label": "Trading Name"
+  },
+  {
+   "fieldname": "registered_office_address",
+   "fieldtype": "Small Text",
+   "label": "Registered Office Address"
+  },
+  {
+   "fieldname": "workplace__accident_location",
+   "fieldtype": "Small Text",
+   "label": "Workplace / Accident Location"
+  },
+  {
+   "fieldname": "main_activity_at_workplace",
+   "fieldtype": "Data",
+   "label": "Main Activity at Workplace"
+  },
+  {
+   "fieldname": "number_of_employees_at_site",
+   "fieldtype": "Int",
+   "label": "Number of Employees at Site"
+  },
+  {
+   "default": "0",
+   "fieldname": "ohs_committee_at_workplace",
+   "fieldtype": "Check",
+   "label": "OHS Committee at Workplace"
+  },
+  {
+   "fieldname": "injured__ill_person_details_section",
+   "fieldtype": "Section Break",
+   "label": "Injured / Ill Person Details"
+  },
+  {
+   "fieldname": "sur_name",
+   "fieldtype": "Data",
+   "label": "Surname"
+  },
+  {
+   "fieldname": "given_names",
+   "fieldtype": "Data",
+   "label": "Given Names"
+  },
+  {
+   "fieldname": "sex_type",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "\nMale\nFemale\nOther"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "default": "0",
+   "fieldname": "employee_of_company",
+   "fieldtype": "Check",
+   "label": "Employee of Company"
+  },
+  {
+   "fieldname": "basis_of_employment_section",
+   "fieldtype": "Section Break",
+   "label": "Basis of Employment"
+  },
+  {
+   "fieldname": "shift_arrangement",
+   "fieldtype": "Select",
+   "label": "Shift Arrangement",
+   "options": "\nFixed Standard Hours\nFlexible Hours\nRotating Shift"
+  },
+  {
+   "fieldname": "number_of_hours_section",
+   "fieldtype": "Section Break",
+   "label": "Number of Hours"
+  },
+  {
+   "fieldname": "working_hours",
+   "fieldtype": "Select",
+   "label": "Working Hours",
+   "options": "\n8 Hours or Less\nMore Than 8 Hours (excluding overtime)"
+  },
+  {
+   "fieldname": "job_details_section",
+   "fieldtype": "Section Break",
+   "label": "Job Details"
+  },
+  {
+   "fieldname": "occupation__job_title",
+   "fieldtype": "Data",
+   "label": "Occupation / Job Title"
+  },
+  {
+   "fieldname": "main_task_performed",
+   "fieldtype": "Small Text",
+   "label": "Main Task Performed"
+  },
+  {
+   "fieldname": "training_provided_section",
+   "fieldtype": "Section Break",
+   "label": "Training Provided"
+  },
+  {
+   "default": "0",
+   "fieldname": "induction_training",
+   "fieldtype": "Check",
+   "label": "Induction Training"
+  },
+  {
+   "default": "0",
+   "fieldname": "task_specific_training",
+   "fieldtype": "Check",
+   "label": "Task Specific Training"
+  },
+  {
+   "default": "0",
+   "fieldname": "both_training_types",
+   "fieldtype": "Check",
+   "label": "Both Training Types"
+  },
+  {
+   "default": "0",
+   "fieldname": "no_training",
+   "fieldtype": "Check",
+   "label": "No Training"
+  },
+  {
+   "fieldname": "details_of_injury_or_disease_section",
+   "fieldtype": "Section Break",
+   "label": "Details of Injury or Disease"
+  },
+  {
+   "fieldname": "date_reported",
+   "fieldtype": "Date",
+   "label": "Date Reported"
+  },
+  {
+   "fieldname": "time_of_injurydisease",
+   "fieldtype": "Time",
+   "label": "Time of Injury/Disease"
+  },
+  {
+   "fieldname": "nature_of_injurydisease",
+   "fieldtype": "Select",
+   "label": "Nature of Injury/Disease",
+   "options": "\nCut / Laceration\nBruise\nBurn\nFracture\nSprain / Strain\nDislocation\nEye Injury\nDisease\nHearing Loss\nFatality\nOther"
+  },
+  {
+   "fieldname": "body_location_of_injury",
+   "fieldtype": "Data",
+   "label": "Body Location of Injury"
+  },
+  {
+   "fieldname": "description_of_occurrence",
+   "fieldtype": "Text Editor",
+   "label": "Description of Occurrence"
+  },
+  {
+   "fieldname": "workplace_area_of_occurrence",
+   "fieldtype": "Data",
+   "label": "Workplace Area of Occurrence"
+  },
+  {
+   "fieldname": "activity_being_performed",
+   "fieldtype": "Small Text",
+   "label": "Activity Being Performed"
+  },
+  {
+   "fieldname": "unexpected_event_description",
+   "fieldtype": "Text Editor",
+   "label": "Unexpected Event Description"
+  },
+  {
+   "fieldname": "how_injury_was_sustained",
+   "fieldtype": "Text Editor",
+   "label": "How Injury Was Sustained"
+  },
+  {
+   "fieldname": "tab_2_tab",
+   "fieldtype": "Tab Break",
+   "label": "Tab 2"
+  },
+  {
+   "fieldname": "column_break_htrc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_sthj",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_spga",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_jdyl",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_kfic",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "column_break_vaso",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "outcome_of_injurydisease_section",
+   "fieldtype": "Section Break",
+   "label": "Outcome of Injury/Disease"
+  },
+  {
+   "fieldname": "employees_preferred_language",
+   "fieldtype": "Data",
+   "label": "Employee's Preferred Language"
+  },
+  {
+   "fieldname": "employment_type",
+   "fieldtype": "Select",
+   "label": "Employment Type",
+   "options": "\nFull Time\nPart Time\nCasual\nTemporary\nContract\nApprentice\nSelf Employed"
+  },
+  {
+   "fieldname": "column_break_ppgd",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "0",
+   "fieldname": "wage__salary_earner",
+   "fieldtype": "Check",
+   "label": "Wage / Salary Earner"
+  },
+  {
+   "default": "0",
+   "fieldname": "trainee",
+   "fieldtype": "Check",
+   "label": "Trainee"
+  },
+  {
+   "default": "0",
+   "fieldname": "pieceworker",
+   "fieldtype": "Check",
+   "label": "Pieceworker"
+  },
+  {
+   "default": "0",
+   "fieldname": "outworker",
+   "fieldtype": "Check",
+   "label": "Outworker"
+  },
+  {
+   "default": "0",
+   "fieldname": "apprentice",
+   "fieldtype": "Check",
+   "label": "Apprentice"
+  },
+  {
+   "default": "0",
+   "fieldname": "self_employed",
+   "fieldtype": "Check",
+   "label": "Self employed"
+  },
+  {
+   "default": "0",
+   "fieldname": "contractor__subcontractor",
+   "fieldtype": "Check",
+   "label": "Contractor / Subcontractor"
+  },
+  {
+   "fieldname": "other_employment_type",
+   "fieldtype": "Data",
+   "label": "Other Employment Type"
+  },
+  {
+   "fieldname": "work_experience_years",
+   "fieldtype": "Int",
+   "label": "Work Experience (Years)"
+  },
+  {
+   "fieldname": "work_experience_months",
+   "fieldtype": "Int",
+   "label": "Work Experience (Months)"
+  },
+  {
+   "fieldname": "form_completed_by",
+   "fieldtype": "Data",
+   "label": "Form Completed By/Name"
+  },
+  {
+   "fieldname": "position",
+   "fieldtype": "Data",
+   "label": "Position"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Attach Image",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "date_completed",
+   "fieldtype": "Date",
+   "label": "Date Completed"
+  },
+  {
+   "fieldname": "rehabilitation_required",
+   "fieldtype": "Select",
+   "label": "Rehabilitation Required",
+   "options": "\nRequired\nNot Required"
+  },
+  {
+   "fieldname": "outcome_of_injurydisease",
+   "fieldtype": "Select",
+   "label": "Outcome of Injury/Disease",
+   "options": "\nRecovered\nRecovering\nPermanent Disability\nTemporary Disability\nFatality\nUnknown"
+  },
+  {
+   "fieldname": "rehabilitation_start_date",
+   "fieldtype": "Date",
+   "label": "Rehabilitation Start Date"
+  },
+  {
+   "fieldname": "section_break_ryla",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "preventative_actions",
+   "fieldtype": "Table",
+   "label": "Preventative Actions",
+   "options": "Preventative Actions"
+  },
+  {
+   "fieldname": "section_break_eqso",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "date_of_resumption_of_work",
+   "fieldtype": "Date",
+   "label": "Date of Resumption of Work"
+  },
+  {
+   "fieldname": "column_break_oauh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_working_days_lost",
+   "fieldtype": "Int",
+   "label": "Total Working Days Lost"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-03 21:37:10.705283",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Injury Report",
+ "owner": "sharda.k@anantdv.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

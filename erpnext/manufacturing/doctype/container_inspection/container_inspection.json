@@ -1,0 +1,139 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-11 14:39:13.525231",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "container_no",
+  "market",
+  "section_break_adbc",
+  "inspected_by",
+  "verified_by",
+  "column_break_lkbg",
+  "sign",
+  "sign_1",
+  "section_break_jvid",
+  "odour_check_done",
+  "visual_inspection_done",
+  "column_break_luqe",
+  "any_odour_observed",
+  "any_damages",
+  "section_break_unze",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "container_no",
+   "fieldtype": "Data",
+   "label": "Container No."
+  },
+  {
+   "fieldname": "market",
+   "fieldtype": "Data",
+   "label": "Market"
+  },
+  {
+   "fieldname": "section_break_adbc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "inspected_by",
+   "fieldtype": "Link",
+   "label": "Inspected by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_lkbg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Signature",
+   "label": "Inspected By Sign"
+  },
+  {
+   "fieldname": "sign_1",
+   "fieldtype": "Signature",
+   "label": "Verified By Sign"
+  },
+  {
+   "fieldname": "section_break_jvid",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "odour_check_done",
+   "fieldtype": "Select",
+   "label": "Odour Check Done",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "visual_inspection_done",
+   "fieldtype": "Select",
+   "label": "Visual Inspection Done",
+   "options": "\nYes\nNo"
+  },
+  {
+   "fieldname": "column_break_luqe",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "any_odour_observed",
+   "fieldtype": "Data",
+   "label": "Any Odour Observed"
+  },
+  {
+   "fieldname": "any_damages",
+   "fieldtype": "Data",
+   "label": "Any Damages"
+  },
+  {
+   "fieldname": "section_break_unze",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2026-06-11 14:44:48.240090",
+ "modified_by": "Administrator",
+ "module": "Manufacturing",
+ "name": "Container Inspection",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

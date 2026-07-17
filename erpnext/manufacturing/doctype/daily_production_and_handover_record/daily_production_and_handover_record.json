@@ -1,0 +1,262 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-04 23:08:54.018594",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "time_start",
+  "time_stop",
+  "market",
+  "supervisor",
+  "product_desc",
+  "product_size",
+  "packing_type",
+  "warehouse_cases",
+  "endorsed_by",
+  "received_by",
+  "filler_counter",
+  "labeller_counter",
+  "lpg_start",
+  "lpg_stop",
+  "efl_start",
+  "efl_stop",
+  "boc_start",
+  "boc_stop",
+  "crew_infeed",
+  "crew_filler",
+  "crew_lab",
+  "crew_water",
+  "crew_blowing",
+  "crew_labeller",
+  "waste_bottles",
+  "waste_caps",
+  "waste_preform",
+  "waste_ldpe",
+  "waste_cartons",
+  "waste_samples",
+  "comments",
+  "amended_from",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Shift Date"
+  },
+  {
+   "fieldname": "time_start",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time Start"
+  },
+  {
+   "fieldname": "time_stop",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time Stop"
+  },
+  {
+   "fieldname": "market",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Market"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Production Supervisor",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "product_desc",
+   "fieldtype": "Data",
+   "label": "Product Description"
+  },
+  {
+   "fieldname": "product_size",
+   "fieldtype": "Data",
+   "label": "Product Size"
+  },
+  {
+   "fieldname": "packing_type",
+   "fieldtype": "Data",
+   "label": "Packing Type"
+  },
+  {
+   "fieldname": "warehouse_cases",
+   "fieldtype": "Int",
+   "label": "Warehouse Cases"
+  },
+  {
+   "fieldname": "endorsed_by",
+   "fieldtype": "Link",
+   "label": "Endorsed By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "received_by",
+   "fieldtype": "Link",
+   "label": "Received By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "filler_counter",
+   "fieldtype": "Data",
+   "label": "Filler Counter"
+  },
+  {
+   "fieldname": "labeller_counter",
+   "fieldtype": "Data",
+   "label": "Labeller Counter"
+  },
+  {
+   "fieldname": "lpg_start",
+   "fieldtype": "Data",
+   "label": "LPG Start"
+  },
+  {
+   "fieldname": "lpg_stop",
+   "fieldtype": "Data",
+   "label": "LPG Stop"
+  },
+  {
+   "fieldname": "efl_start",
+   "fieldtype": "Data",
+   "label": "EFL Start"
+  },
+  {
+   "fieldname": "efl_stop",
+   "fieldtype": "Data",
+   "label": "EFL Stop"
+  },
+  {
+   "fieldname": "boc_start",
+   "fieldtype": "Data",
+   "label": "BOC Start"
+  },
+  {
+   "fieldname": "boc_stop",
+   "fieldtype": "Data",
+   "label": "BOC Stop"
+  },
+  {
+   "fieldname": "crew_infeed",
+   "fieldtype": "Data",
+   "label": "Crew Infeed"
+  },
+  {
+   "fieldname": "crew_filler",
+   "fieldtype": "Data",
+   "label": "Crew Filler"
+  },
+  {
+   "fieldname": "crew_lab",
+   "fieldtype": "Data",
+   "label": "Crew Lab"
+  },
+  {
+   "fieldname": "crew_water",
+   "fieldtype": "Data",
+   "label": "Crew Water"
+  },
+  {
+   "fieldname": "crew_blowing",
+   "fieldtype": "Data",
+   "label": "Crew Blowing"
+  },
+  {
+   "fieldname": "crew_labeller",
+   "fieldtype": "Data",
+   "label": "Crew Labeller"
+  },
+  {
+   "fieldname": "waste_bottles",
+   "fieldtype": "Int",
+   "label": "Waste Bottles"
+  },
+  {
+   "fieldname": "waste_caps",
+   "fieldtype": "Int",
+   "label": "Waste Caps"
+  },
+  {
+   "fieldname": "waste_preform",
+   "fieldtype": "Int",
+   "label": "Waste Preform"
+  },
+  {
+   "fieldname": "waste_ldpe",
+   "fieldtype": "Data",
+   "label": "Waste LDPE"
+  },
+  {
+   "fieldname": "waste_cartons",
+   "fieldtype": "Int",
+   "label": "Waste Cartons"
+  },
+  {
+   "fieldname": "waste_samples",
+   "fieldtype": "Int",
+   "label": "Waste Samples"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Production And Handover Record",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-16 16:56:30.505697",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Daily Production And Handover Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

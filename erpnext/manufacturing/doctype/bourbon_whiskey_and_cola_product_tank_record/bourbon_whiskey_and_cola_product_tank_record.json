@@ -1,0 +1,176 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-04 22:45:22.356470",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "tank_no",
+  "volume",
+  "prepared_by",
+  "verified_by",
+  "analysed_by",
+  "lab_alc",
+  "tank_ph",
+  "finished_ph",
+  "recipe_checklist",
+  "brix_mixer",
+  "brix_mixer_by",
+  "brix_product",
+  "brix_product_by",
+  "gas_level",
+  "comments",
+  "amended_from",
+  "section_break_mcrq",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date of Batch"
+  },
+  {
+   "fieldname": "tank_no",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Tank Number"
+  },
+  {
+   "fieldname": "volume",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Volume"
+  },
+  {
+   "fieldname": "prepared_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Prepared By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "analysed_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Lab Report Analysed By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "lab_alc",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Lab Report Alcohol %"
+  },
+  {
+   "fieldname": "tank_ph",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Tank pH"
+  },
+  {
+   "fieldname": "finished_ph",
+   "fieldtype": "Float",
+   "in_list_view": 1,
+   "label": "Finished Product pH"
+  },
+  {
+   "fieldname": "recipe_checklist",
+   "fieldtype": "Table",
+   "label": "Batch Recipe Checklist",
+   "options": "Bourbon Whiskey and Cola Recipe Item"
+  },
+  {
+   "fieldname": "brix_mixer",
+   "fieldtype": "Float",
+   "label": "Brix Mixer %"
+  },
+  {
+   "fieldname": "brix_mixer_by",
+   "fieldtype": "Data",
+   "label": "Brix Mixer By"
+  },
+  {
+   "fieldname": "brix_product",
+   "fieldtype": "Float",
+   "label": "Brix Finished Product %"
+  },
+  {
+   "fieldname": "brix_product_by",
+   "fieldtype": "Data",
+   "label": "Brix Finished Product By"
+  },
+  {
+   "fieldname": "gas_level",
+   "fieldtype": "Float",
+   "label": "Gas Level"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Bourbon Whiskey And Cola Product Tank Record",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_mcrq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-16 16:53:53.591845",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Bourbon Whiskey And Cola Product Tank Record",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

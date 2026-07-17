@@ -1,0 +1,196 @@
+/* custom_login.css */
+
+/* Full page background */
+.for-login,
+.for-email-login,
+.for-signup,
+.for-forgot,
+.for-login-with-email-link {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+/* Login card */
+.page-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 24px;
+    padding: 35px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    border: none;
+}
+
+/* Logo section */
+.page-card-head {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.page-card-head h4 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #111827;
+    margin-top: 15px;
+}
+
+/* App logo */
+.app-logo {
+    max-width: 90px;
+    height: auto;
+    margin: auto;
+    display: block;
+}
+
+/* Input fields */
+.form-control {
+    height: 50px;
+    border-radius: 14px !important;
+    border: 1px solid #d1d5db !important;
+    padding-left: 16px !important;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    box-shadow: none !important;
+}
+
+.form-control:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.15) !important;
+}
+
+/* Input wrappers */
+.email-field,
+.password-field {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+/* Icons */
+.field-icon {
+    position: absolute;
+    top: 17px;
+    right: 16px;
+    color: #6b7280;
+}
+
+/* Show password button */
+.toggle-password {
+    position: absolute;
+    right: 40px;
+    top: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    color: #2563eb;
+    font-weight: 500;
+}
+
+/* Login button */
+.btn-login,
+.btn-primary {
+    height: 50px;
+    border-radius: 14px !important;
+    background: #2563eb !important;
+    border: none !important;
+    color: white !important;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn-login:hover,
+.btn-primary:hover {
+    background: #1d4ed8 !important;
+    transform: translateY(-1px);
+}
+
+/* Social login buttons */
+.btn-login-option {
+    border-radius: 14px !important;
+    height: 48px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    border: 1px solid #d1d5db !important;
+    background: #f9fafb !important;
+}
+
+.btn-login-option:hover {
+    background: #f3f4f6 !important;
+}
+
+/* Forgot password */
+.forgot-password-message {
+    text-align: right;
+    margin-top: -8px;
+    margin-bottom: 18px;
+}
+
+.forgot-password-message a {
+    color: #2563eb;
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.forgot-password-message a:hover {
+    text-decoration: underline;
+}
+
+/* Signup text */
+.sign-up-message {
+    margin-top: 20px;
+    text-align: center;
+    color: #e5e7eb;
+    font-size: 14px;
+}
+
+.sign-up-message a {
+    color: #60a5fa;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sign-up-message a:hover {
+    text-decoration: underline;
+}
+
+/* Divider */
+.login-divider {
+    margin: 20px 0;
+    position: relative;
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.login-divider::before,
+.login-divider::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 35%;
+    height: 1px;
+    background: #d1d5db;
+}
+
+.login-divider::before {
+    left: 0;
+}
+
+.login-divider::after {
+    right: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 480px) {
+    .page-card {
+        padding: 24px;
+        border-radius: 18px;
+    }
+
+    .page-card-head h4 {
+        font-size: 22px;
+    }
+}

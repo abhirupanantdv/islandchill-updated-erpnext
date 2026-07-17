@@ -1,0 +1,231 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-04 16:12:09.704845",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_sgwa",
+  "injured_person",
+  "sex",
+  "address",
+  "dob",
+  "job_title",
+  "experience_years",
+  "experience_months",
+  "experience_days",
+  "experience",
+  "relationship",
+  "incident_time",
+  "incident_type",
+  "incident_agency",
+  "incident_location",
+  "details",
+  "medical_treatment",
+  "practitioner_name",
+  "date_notified",
+  "incapacity_period",
+  "days_lost",
+  "date_resumption",
+  "corrective_action",
+  "date_action_taken",
+  "operator",
+  "supervisor",
+  "overall_comments",
+  "section_break_xypu",
+  "work_order",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_sgwa",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "injured_person",
+   "fieldtype": "Data",
+   "label": "Name of Injured Person"
+  },
+  {
+   "fieldname": "sex",
+   "fieldtype": "Select",
+   "label": "Sex",
+   "options": "\nMale\nFemale"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Small Text",
+   "label": "Residential Address"
+  },
+  {
+   "fieldname": "dob",
+   "fieldtype": "Date",
+   "label": "Date of Birth"
+  },
+  {
+   "fieldname": "job_title",
+   "fieldtype": "Data",
+   "label": "Job Title"
+  },
+  {
+   "fieldname": "experience_years",
+   "fieldtype": "Int",
+   "label": "Experience (Years)"
+  },
+  {
+   "fieldname": "experience_months",
+   "fieldtype": "Int",
+   "label": "Experience (Months)"
+  },
+  {
+   "fieldname": "experience_days",
+   "fieldtype": "Int",
+   "label": "Experience (Days)"
+  },
+  {
+   "fieldname": "experience",
+   "fieldtype": "Data",
+   "label": "Experience"
+  },
+  {
+   "fieldname": "relationship",
+   "fieldtype": "Select",
+   "label": "Relationship Status",
+   "options": "\nEmployee\nContractor\nTrainee\nApprentice\nVisitor"
+  },
+  {
+   "fieldname": "incident_time",
+   "fieldtype": "Datetime",
+   "label": "Date and Time of Occurrence"
+  },
+  {
+   "fieldname": "incident_type",
+   "fieldtype": "Select",
+   "label": "Type of Incident",
+   "options": "\nAccident\nDisease\nNear Miss"
+  },
+  {
+   "fieldname": "incident_agency",
+   "fieldtype": "Data",
+   "label": "Agency Involved"
+  },
+  {
+   "fieldname": "incident_location",
+   "fieldtype": "Small Text",
+   "label": "How/Where did incident happen? Location & Description"
+  },
+  {
+   "fieldname": "details",
+   "fieldtype": "Small Text",
+   "label": "Description of Personal Damage/Injuries"
+  },
+  {
+   "fieldname": "medical_treatment",
+   "fieldtype": "Data",
+   "label": "Medical Treatment Given"
+  },
+  {
+   "fieldname": "practitioner_name",
+   "fieldtype": "Data",
+   "label": "Name of Medical Practitioner"
+  },
+  {
+   "fieldname": "date_notified",
+   "fieldtype": "Date",
+   "label": "Date Notified to Chief Inspector"
+  },
+  {
+   "fieldname": "incapacity_period",
+   "fieldtype": "Data",
+   "label": "Period of Incapacity"
+  },
+  {
+   "fieldname": "days_lost",
+   "fieldtype": "Int",
+   "label": "Total Working Days Lost"
+  },
+  {
+   "fieldname": "date_resumption",
+   "fieldtype": "Date",
+   "label": "Date of Resumption of Work"
+  },
+  {
+   "fieldname": "corrective_action",
+   "fieldtype": "Data",
+   "label": "Corrective Action Identified"
+  },
+  {
+   "fieldname": "date_action_taken",
+   "fieldtype": "Date",
+   "label": "Date Action Taken"
+  },
+  {
+   "fieldname": "operator",
+   "fieldtype": "Data",
+   "label": "Sign of Operator / Logger"
+  },
+  {
+   "fieldname": "supervisor",
+   "fieldtype": "Data",
+   "label": "Sign of Supervisor / Approver"
+  },
+  {
+   "fieldname": "overall_comments",
+   "fieldtype": "Small Text",
+   "label": "Overall Comments / Remarks"
+  },
+  {
+   "fieldname": "section_break_xypu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Accident and Disease Notification Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-15 22:51:02.782293",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Accident and Disease Notification Report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

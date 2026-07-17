@@ -1,0 +1,154 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 16:25:49.851313",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "line",
+  "product",
+  "size",
+  "column_break_coie",
+  "target_fill_weight",
+  "tolerance_limit_min",
+  "tolerance_limit_max",
+  "qc_name",
+  "signature",
+  "hourly_check_data_section",
+  "table_ycve",
+  "section_break_tuhc",
+  "supervisor_review",
+  "supervisor_name",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "line",
+   "fieldtype": "Link",
+   "label": "Line",
+   "options": "Line List"
+  },
+  {
+   "fieldname": "product",
+   "fieldtype": "Data",
+   "label": "Product"
+  },
+  {
+   "fieldname": "size",
+   "fieldtype": "Data",
+   "label": "Size"
+  },
+  {
+   "fieldname": "column_break_coie",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "target_fill_weight",
+   "fieldtype": "Float",
+   "label": "Target Fill Weight"
+  },
+  {
+   "fieldname": "tolerance_limit_min",
+   "fieldtype": "Float",
+   "label": "Tolerance Limit (Min)"
+  },
+  {
+   "fieldname": "tolerance_limit_max",
+   "fieldtype": "Float",
+   "label": "Tolerance Limit (Max)"
+  },
+  {
+   "fieldname": "qc_name",
+   "fieldtype": "Data",
+   "label": "QC Name"
+  },
+  {
+   "description": "The section below is repeated for each hour of the shift. A sample of 10 consecutive samples should be pulled from the line for each hourly check.",
+   "fieldname": "hourly_check_data_section",
+   "fieldtype": "Section Break",
+   "label": "Hourly Check Data"
+  },
+  {
+   "fieldname": "table_ycve",
+   "fieldtype": "Table",
+   "options": "Hourly Check Table"
+  },
+  {
+   "fieldname": "section_break_tuhc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "supervisor_review",
+   "fieldtype": "Small Text",
+   "label": "Supervisor Review"
+  },
+  {
+   "fieldname": "supervisor_name",
+   "fieldtype": "Link",
+   "label": "Supervisor Name",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "signature",
+   "fieldtype": "Signature",
+   "label": "Signature"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Hourly Weight Check Form",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-17 18:30:21.761167",
+ "modified_by": "tathagata.c@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Hourly Weight Check Form",
+ "owner": "tathagata.c@anantdv.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Quality Checks",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

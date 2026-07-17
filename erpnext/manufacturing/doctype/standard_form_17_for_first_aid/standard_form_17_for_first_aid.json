@@ -1,0 +1,171 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-05-26 19:50:18.373115",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "column_break_bxdg",
+  "time",
+  "section_break_bsjb",
+  "verified_by",
+  "column_break_tjmh",
+  "sign",
+  "section_break_fmlh",
+  "employee__person_injured",
+  "section_break_fdrc",
+  "type_of_injury",
+  "section_break_rsyd",
+  "causes_of_injury",
+  "first_aid_treatment_given",
+  "first_aid_given_by",
+  "further_treatment_if_any",
+  "amended_from",
+  "section_break_jugm",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_bxdg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time"
+  },
+  {
+   "fieldname": "section_break_bsjb",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "label": "Verified By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_tjmh",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sign",
+   "fieldtype": "Signature",
+   "label": "Sign"
+  },
+  {
+   "fieldname": "section_break_fmlh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "employee__person_injured",
+   "fieldtype": "Link",
+   "label": "Employee / Person Injured",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "section_break_fdrc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "type_of_injury",
+   "fieldtype": "Select",
+   "label": "Type of Injury",
+   "options": "\nMinor (small cuts, bruises etc.)\nSerious (major injury such as fracture)\nNeed Immediate Medical Attention"
+  },
+  {
+   "fieldname": "section_break_rsyd",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "causes_of_injury",
+   "fieldtype": "Small Text",
+   "label": "Cause(s) of Injury"
+  },
+  {
+   "fieldname": "first_aid_treatment_given",
+   "fieldtype": "Small Text",
+   "label": "First Aid Treatment Given"
+  },
+  {
+   "fieldname": "first_aid_given_by",
+   "fieldtype": "Small Text",
+   "label": "First Aid Given By"
+  },
+  {
+   "fieldname": "further_treatment_if_any",
+   "fieldtype": "Small Text",
+   "label": "Further Treatment (if any)"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Standard Form 17 For First Aid",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_jugm",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-16 16:20:51.685078",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Standard Form 17 For First Aid",
+ "owner": "sharda.k@anantdv.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

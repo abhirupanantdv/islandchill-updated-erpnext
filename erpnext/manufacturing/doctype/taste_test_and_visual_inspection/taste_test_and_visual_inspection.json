@@ -1,0 +1,101 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 15:14:41.130368",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "taste_test",
+  "section_break_lepk",
+  "visual_inspection",
+  "amended_from",
+  "section_break_kmij",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "taste_test",
+   "fieldtype": "Table",
+   "label": "Taste Test",
+   "options": "Taste Result"
+  },
+  {
+   "fieldname": "section_break_lepk",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visual_inspection",
+   "fieldtype": "Table",
+   "label": "Visual Inspection",
+   "options": "Visual Inspection Table"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Taste Test and Visual Inspection",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_kmij",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-16 16:49:43.984591",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Taste Test and Visual Inspection",
+ "owner": "tathagata.c@anantdv.com",
+ "permissions": [
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "amend": 1,
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

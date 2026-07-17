@@ -1,0 +1,80 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-08 16:25:45.738809",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "area_of_sanitation",
+  "technician",
+  "verified_by",
+  "time_start",
+  "time_end",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date"
+  },
+  {
+   "fieldname": "technician",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Technician",
+   "options": "Employee"
+  },
+  {
+   "default": "Now",
+   "fieldname": "time_start",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time Start"
+  },
+  {
+   "fieldname": "area_of_sanitation",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Area of Sanitation"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Verified by",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "time_end",
+   "fieldtype": "Time",
+   "in_list_view": 1,
+   "label": "Time End",
+   "options": "Now"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "in_list_view": 1,
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-08 16:31:25.203212",
+ "modified_by": "Administrator",
+ "module": "Manufacturing",
+ "name": "Sanitation Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

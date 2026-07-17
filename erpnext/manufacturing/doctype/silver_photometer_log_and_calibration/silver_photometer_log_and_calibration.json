@@ -1,0 +1,179 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 17:50:50.073581",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "set1_section",
+  "date1",
+  "tech1",
+  "verifier1",
+  "calibration1",
+  "rows1",
+  "set2_section",
+  "date2",
+  "tech2",
+  "verifier2",
+  "calibration2",
+  "rows2",
+  "set3_section",
+  "date3",
+  "tech3",
+  "verifier3",
+  "calibration3",
+  "rows3",
+  "amended_from",
+  "section_break_byhh",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "set1_section",
+   "fieldtype": "Section Break",
+   "label": "Set 1 Readings"
+  },
+  {
+   "fieldname": "date1",
+   "fieldtype": "Date",
+   "label": "Date Set 1"
+  },
+  {
+   "fieldname": "tech1",
+   "fieldtype": "Link",
+   "label": "Technician Set 1",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verifier1",
+   "fieldtype": "Link",
+   "label": "Verified By Set 1",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "calibration1",
+   "fieldtype": "Data",
+   "label": "Calibration Records Set 1"
+  },
+  {
+   "fieldname": "rows1",
+   "fieldtype": "Table",
+   "label": "Readings Set 1",
+   "options": "Silver Photometer Readings"
+  },
+  {
+   "fieldname": "set2_section",
+   "fieldtype": "Section Break",
+   "label": "Set 2 Readings"
+  },
+  {
+   "fieldname": "date2",
+   "fieldtype": "Date",
+   "label": "Date Set 2"
+  },
+  {
+   "fieldname": "tech2",
+   "fieldtype": "Link",
+   "label": "Technician Set 2",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verifier2",
+   "fieldtype": "Link",
+   "label": "Verified By Set 2",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "calibration2",
+   "fieldtype": "Data",
+   "label": "Calibration Records Set 2"
+  },
+  {
+   "fieldname": "rows2",
+   "fieldtype": "Table",
+   "label": "Readings Set 2",
+   "options": "Silver Photometer Readings"
+  },
+  {
+   "fieldname": "set3_section",
+   "fieldtype": "Section Break",
+   "label": "Set 3 Readings"
+  },
+  {
+   "fieldname": "date3",
+   "fieldtype": "Date",
+   "label": "Date Set 3"
+  },
+  {
+   "fieldname": "tech3",
+   "fieldtype": "Link",
+   "label": "Technician Set 3",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verifier3",
+   "fieldtype": "Link",
+   "label": "Verified By Set 3",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "calibration3",
+   "fieldtype": "Data",
+   "label": "Calibration Records Set 3"
+  },
+  {
+   "fieldname": "rows3",
+   "fieldtype": "Table",
+   "label": "Readings Set 3",
+   "options": "Silver Photometer Readings"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Silver Photometer Log and Calibration",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_byhh",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-15 20:25:35.410719",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Silver Photometer Log and Calibration",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

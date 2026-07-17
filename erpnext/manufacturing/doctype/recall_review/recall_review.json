@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-08 16:07:32.595162",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "attendees",
+  "why_was_there_a_recall",
+  "what_course_of_action_was_taken_to_resolve_the_issue",
+  "what_actions_were_taken_to_ensure_this_issue_does_not_reoccur",
+  "who_were_responsible_for_verifying_and_monitoring",
+  "total_length_of_time_for_recall",
+  "how_can_we_improve_next_time_and_be_quickaccurate",
+  "total_cost_of_recall",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Table MultiSelect",
+   "label": "Attendees",
+   "options": "employee table"
+  },
+  {
+   "fieldname": "why_was_there_a_recall",
+   "fieldtype": "Small Text",
+   "label": "Why was there a recall?"
+  },
+  {
+   "fieldname": "what_course_of_action_was_taken_to_resolve_the_issue",
+   "fieldtype": "Small Text",
+   "label": "What course of action was taken to resolve the issue?"
+  },
+  {
+   "fieldname": "what_actions_were_taken_to_ensure_this_issue_does_not_reoccur",
+   "fieldtype": "Small Text",
+   "label": "What actions were taken to ensure this issue does not reoccur?"
+  },
+  {
+   "fieldname": "who_were_responsible_for_verifying_and_monitoring",
+   "fieldtype": "Table MultiSelect",
+   "label": "Who were responsible for verifying and monitoring?",
+   "options": "employee table"
+  },
+  {
+   "fieldname": "total_length_of_time_for_recall",
+   "fieldtype": "Data",
+   "label": "Total length of time for recall?"
+  },
+  {
+   "fieldname": "how_can_we_improve_next_time_and_be_quickaccurate",
+   "fieldtype": "Small Text",
+   "label": "How can we improve next time and be quick/accurate?"
+  },
+  {
+   "fieldname": "total_cost_of_recall",
+   "fieldtype": "Data",
+   "label": "Total cost of recall"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Recall Review",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-06-17 20:17:10.652222",
+ "modified_by": "tathagata.c@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Recall Review",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

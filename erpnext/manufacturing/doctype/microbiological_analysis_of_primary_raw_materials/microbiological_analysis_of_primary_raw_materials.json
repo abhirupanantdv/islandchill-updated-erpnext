@@ -1,0 +1,181 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 16:51:34.308564",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "analysis_report_for_raw_material_section",
+  "date_of_analysis",
+  "analyst",
+  "column_break_ifiz",
+  "preform_lot_no",
+  "closures_lot_no",
+  "bib_inner_bag",
+  "analysis_and_results_section",
+  "table_kzci",
+  "incubation_information_and_result_analysis_section",
+  "table_gdru",
+  "acceptance_parameters_section",
+  "negative_or_absent_for_coliform_and_ecoli",
+  "signed",
+  "date",
+  "column_break_cirg",
+  "comments",
+  "amended_from",
+  "section_break_hufu",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "analysis_report_for_raw_material_section",
+   "fieldtype": "Section Break",
+   "label": "Analysis Report For Raw Material"
+  },
+  {
+   "fieldname": "date_of_analysis",
+   "fieldtype": "Date",
+   "label": "Date of Analysis"
+  },
+  {
+   "fieldname": "analyst",
+   "fieldtype": "Link",
+   "label": "Analyst",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "column_break_ifiz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "preform_lot_no",
+   "fieldtype": "Data",
+   "label": "Preform Lot No."
+  },
+  {
+   "fieldname": "closures_lot_no",
+   "fieldtype": "Data",
+   "label": "Closures Lot No."
+  },
+  {
+   "fieldname": "bib_inner_bag",
+   "fieldtype": "Data",
+   "label": "BIB Inner Bag"
+  },
+  {
+   "fieldname": "analysis_and_results_section",
+   "fieldtype": "Section Break",
+   "label": "Analysis and Results"
+  },
+  {
+   "fieldname": "table_kzci",
+   "fieldtype": "Table",
+   "options": "Analysis and Results Table"
+  },
+  {
+   "fieldname": "incubation_information_and_result_analysis_section",
+   "fieldtype": "Section Break",
+   "label": "Incubation Information and Result Analysis"
+  },
+  {
+   "fieldname": "table_gdru",
+   "fieldtype": "Table",
+   "options": "Result Analysis Table"
+  },
+  {
+   "fieldname": "acceptance_parameters_section",
+   "fieldtype": "Section Break",
+   "label": "Acceptance Parameters"
+  },
+  {
+   "fieldname": "negative_or_absent_for_coliform_and_ecoli",
+   "fieldtype": "Data",
+   "label": "Negative or Absent for Coliform and EColi"
+  },
+  {
+   "fieldname": "signed",
+   "fieldtype": "Signature",
+   "label": "Signed"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "column_break_cirg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Microbiological Analysis of Primary Raw Materials",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "section_break_hufu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-16 16:36:28.239455",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Microbiological Analysis of Primary Raw Materials",
+ "owner": "tathagata.c@anantdv.com",
+ "permissions": [
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  },
+  {
+   "cancel": 1,
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "select": 1,
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

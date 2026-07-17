@@ -1,0 +1,174 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 17:20:14.014070",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "analysis_report_for_enviromental_section",
+  "date_of_swab",
+  "analyst",
+  "test_for",
+  "analysis_and_results_section",
+  "table_mxza",
+  "table_hovh",
+  "media_and_material_information_section",
+  "yeast_and_mold_agar_date_prepared",
+  "hpc_agar_date_prepared",
+  "incubation_information_and_result_analysis_section",
+  "table_tmcr",
+  "notes_and_validity_section",
+  "approved_by",
+  "date_1",
+  "comments",
+  "amended_from",
+  "section_break_ifkz",
+  "work_order"
+ ],
+ "fields": [
+  {
+   "fieldname": "analysis_report_for_enviromental_section",
+   "fieldtype": "Section Break",
+   "label": "Analysis Report For Enviromental"
+  },
+  {
+   "fieldname": "date_of_swab",
+   "fieldtype": "Date",
+   "label": "Date of Swab"
+  },
+  {
+   "fieldname": "analyst",
+   "fieldtype": "Link",
+   "label": "Analyst",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "test_for",
+   "fieldtype": "Link",
+   "label": "Test For",
+   "options": "Swab Test Check For"
+  },
+  {
+   "fieldname": "analysis_and_results_section",
+   "fieldtype": "Section Break",
+   "label": "Analysis and Results"
+  },
+  {
+   "fieldname": "table_mxza",
+   "fieldtype": "Table",
+   "options": "Swab Test table"
+  },
+  {
+   "fieldname": "media_and_material_information_section",
+   "fieldtype": "Section Break",
+   "label": "Media and Material Information"
+  },
+  {
+   "fieldname": "yeast_and_mold_agar_date_prepared",
+   "fieldtype": "Date",
+   "label": "Yeast and Mold Agar Date Prepared"
+  },
+  {
+   "fieldname": "hpc_agar_date_prepared",
+   "fieldtype": "Date",
+   "label": "HPC Agar Date Prepared"
+  },
+  {
+   "fieldname": "incubation_information_and_result_analysis_section",
+   "fieldtype": "Section Break",
+   "label": "Incubation Information and Result Analysis"
+  },
+  {
+   "fieldname": "table_tmcr",
+   "fieldtype": "Table",
+   "options": "Incubator Info and Result Analysis"
+  },
+  {
+   "fieldname": "notes_and_validity_section",
+   "fieldtype": "Section Break",
+   "label": "Notes and Validity"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "date_1",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Enviromental Swab Test",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "table_hovh",
+   "fieldtype": "Table",
+   "options": "Swab Test Report Table"
+  },
+  {
+   "fieldname": "section_break_ifkz",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-15 22:27:48.571281",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "Enviromental Swab Test",
+ "owner": "tathagata.c@anantdv.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Operation Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

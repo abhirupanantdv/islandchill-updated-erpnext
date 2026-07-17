@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2026-06-01 15:19:37.316294",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "sample_date",
+  "sample_size",
+  "d5_particle",
+  "d5_done_by",
+  "d10_particle",
+  "d10_done_by",
+  "d30_particle",
+  "d30_done_by",
+  "verified_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "sample_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Sample Date"
+  },
+  {
+   "fieldname": "sample_size",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Sample Size"
+  },
+  {
+   "fieldname": "d5_particle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "5D Particles"
+  },
+  {
+   "fieldname": "d5_done_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "5D Done By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "d10_particle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "10D Particles"
+  },
+  {
+   "fieldname": "d10_done_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "10D Done By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "d30_particle",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "30D Particles"
+  },
+  {
+   "fieldname": "d30_done_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "30D Done By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "verified_by",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Verified By",
+   "options": "Employee"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-07-04 17:45:00.000000",
+ "modified_by": "Administrator",
+ "module": "Manufacturing",
+ "name": "Visual Inspection Table",
+ "owner": "tathagata.c@anantdv.com",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

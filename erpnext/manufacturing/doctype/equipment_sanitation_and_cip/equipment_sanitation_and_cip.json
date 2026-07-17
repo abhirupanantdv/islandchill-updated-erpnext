@@ -1,0 +1,145 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-07-03 16:00:09.201696",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "date",
+  "performed_by_operator",
+  "equipmentline_cleaned",
+  "concentration_ppm__",
+  "sanitation_result",
+  "column_break_yczq",
+  "time",
+  "verified_by_supervisor",
+  "chemicalmethod_used",
+  "contact_time_mins",
+  "section_break_vpvi",
+  "observations__remarks",
+  "section_break_xqgg",
+  "work_order",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "performed_by_operator",
+   "fieldtype": "Link",
+   "label": "Performed By (Operator)",
+   "options": "Employee",
+   "reqd": 1
+  },
+  {
+   "fieldname": "equipmentline_cleaned",
+   "fieldtype": "Link",
+   "label": "Equipment/Line Cleaned",
+   "options": "Equipment List",
+   "reqd": 1
+  },
+  {
+   "fieldname": "concentration_ppm__",
+   "fieldtype": "Data",
+   "label": "Concentration (PPM / %)"
+  },
+  {
+   "fieldname": "sanitation_result",
+   "fieldtype": "Select",
+   "label": "Sanitation Result",
+   "options": "\nSatisfactory\nUnsatisfactory"
+  },
+  {
+   "fieldname": "column_break_yczq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "time",
+   "fieldtype": "Time",
+   "label": "Time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "verified_by_supervisor",
+   "fieldtype": "Link",
+   "label": "Verified By (Supervisor)",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "chemicalmethod_used",
+   "fieldtype": "Link",
+   "label": "Chemical/Method Used",
+   "options": "Chemical Test",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contact_time_mins",
+   "fieldtype": "Int",
+   "label": "Contact Time (Mins)",
+   "reqd": 1
+  },
+  {
+   "fieldname": "section_break_vpvi",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "observations__remarks",
+   "fieldtype": "Small Text",
+   "label": "Observations / Remarks"
+  },
+  {
+   "fieldname": "section_break_xqgg",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "work_order",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "Work Order"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "equipment sanitation and cip",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-07-15 23:13:47.985948",
+ "modified_by": "sharda.k@anantdv.com",
+ "module": "Manufacturing",
+ "name": "equipment sanitation and cip",
+ "owner": "sharda.k@anantdv.com",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

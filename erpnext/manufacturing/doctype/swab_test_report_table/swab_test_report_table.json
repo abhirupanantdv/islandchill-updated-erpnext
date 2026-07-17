@@ -1,0 +1,57 @@
+{
+ "actions": [],
+ "allow_bulk_edit": 1,
+ "allow_rename": 1,
+ "creation": "2026-06-30 20:00:56.972969",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "location",
+  "yeast",
+  "mould",
+  "hpc"
+ ],
+ "fields": [
+  {
+   "fieldname": "location",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Location",
+   "options": "Swab Test Check For"
+  },
+  {
+   "fieldname": "yeast",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Yeast"
+  },
+  {
+   "fieldname": "mould",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Mould"
+  },
+  {
+   "fieldname": "hpc",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HPC"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2026-06-30 20:37:14.357421",
+ "modified_by": "Administrator",
+ "module": "Manufacturing",
+ "name": "Swab Test Report Table",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
