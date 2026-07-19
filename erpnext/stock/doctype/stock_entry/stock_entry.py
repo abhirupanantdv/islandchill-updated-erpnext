@@ -761,7 +761,7 @@ class StockEntry(StockController, SubcontractingInwardController):
 
 			if self.purpose == "Manufacture":
 				if validate_for_manufacture:
-					if d.is_finished_item or d.is_scrap_item:
+					if d.is_finished_item or d.is_scrap_item or d.get("custom_is_extra_goods_row"):
 						d.s_warehouse = None
 						if not d.t_warehouse:
 							frappe.throw(_("Target warehouse is mandatory for row {0}").format(d.idx))
@@ -1038,7 +1038,7 @@ class StockEntry(StockController, SubcontractingInwardController):
 			if d.s_warehouse or d.set_basic_rate_manually:
 				continue
 
-			if d.allow_zero_valuation_rate and d.basic_rate and self.purpose != "Receive from Customer":
+			if d.allow_zero_valuation_rate and d.basic_rate and self.purpose != "Receive from Customer" and not d.get("custom_is_extra_goods_row"):
 				d.basic_rate = 0.0
 				items.append(d.item_code)
 			elif d.is_finished_item:
@@ -1561,6 +1561,12 @@ class StockEntry(StockController, SubcontractingInwardController):
 			return
 
 		for d in self.items:
+			if d.get("custom_is_extra_goods_row"):
+				d.is_finished_item = 1
+				d.is_scrap_item = 0
+				d.s_warehouse = None
+				continue
+
 			if d.t_warehouse and not d.s_warehouse:
 				if self.purpose == "Repack" or d.item_code == finished_item:
 					d.is_finished_item = 1
