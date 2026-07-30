@@ -2383,25 +2383,21 @@ def make_stock_entry(
 
 	if extra_goods_qty > 0:
 		uom = extra_goods_uom or "Nos"
+		item_stock_uom = frappe.db.get_value("Item", work_order.production_item, "stock_uom") or "Box"
 		conversion_factor = frappe.db.get_value(
 			"UOM Conversion Detail",
 			{"parent": work_order.production_item, "uom": uom},
 			"conversion_factor"
 		) or 1.0
-		if uom == (work_order.get("stock_uom") or "Box"):
+		if uom == item_stock_uom:
 			conversion_factor = 1.0
 		extra_goods_qty_converted = flt(extra_goods_qty * conversion_factor)
 
-	# qty coming from your Job Card is actual good completed qty:
-	# 197 Box + 12 Nos = 197.4992
 	good_completed_qty = (flt(qty)
 	if qty is not None
-	else flt(work_order.qty) - flt(work_order.produced_qty) - process_loss_qty)
+	else flt(work_order.qty) - flt(work_order.produced_qty))
 
-	# Stock Entry fg_completed_qty must be Good Qty + Extra Qty + Process Loss
-	manufacture_qty = flt(good_completed_qty + extra_goods_qty_converted + process_loss_qty)
-
-	stock_entry.fg_completed_qty = manufacture_qty
+	stock_entry.fg_completed_qty = flt(good_completed_qty + extra_goods_qty_converted)
 
 	if work_order.bom_no:
 		stock_entry.inspection_required = frappe.db.get_value("BOM", work_order.bom_no, "inspection_required")
@@ -2432,34 +2428,6 @@ def make_stock_entry(
 	if purpose != "Disassemble":
 		stock_entry.set_serial_no_batch_for_finished_good()
 
-		if purpose == "Manufacture" and process_loss_qty:
-			# Find the finished item row, reduce its quantity, and add a process loss row
-			finished_item_code = work_order.production_item
-			for item in stock_entry.items:
-				if item.is_finished_item and item.item_code == finished_item_code:
-					# Reduce original finished good row quantity to good completed qty
-					item.qty = flt(manufacture_qty - process_loss_qty)
-					item.transfer_qty = flt(manufacture_qty - process_loss_qty)
-					if item.meta.has_field("fg_completed_qty"):
-						item.fg_completed_qty = flt(manufacture_qty - process_loss_qty)
-
-					# Append the process loss row to items
-					stock_entry.append("items", {
-						"item_code": finished_item_code,
-						"item_name": item.item_name,
-						"uom": item.uom,
-						"stock_uom": item.stock_uom,
-						"conversion_factor": item.conversion_factor,
-						"qty": flt(process_loss_qty),
-						"transfer_qty": flt(process_loss_qty),
-						"s_warehouse": item.t_warehouse,
-						"t_warehouse": None,
-						"is_finished_item": 0,
-						"description": "Process Loss",
-						"work_order": work_order_id,
-					})
-					break
-
 	# ── NEW: Add extra goods row ───────────────────────────────────────────────
 	if purpose == "Manufacture" and qty is not None:
 		if extra_goods_qty > 0:
@@ -2477,7 +2445,7 @@ def make_stock_entry(
 				)
 			else:
 				finished_item = work_order.production_item
-				stock_uom = work_order.get("stock_uom") or frappe.db.get_value("Item", finished_item, "stock_uom") or "Box"
+				stock_uom = item_stock_uom
 				uom = extra_goods_uom or "Nos"
 
 				conversion_factor = frappe.db.get_value(
