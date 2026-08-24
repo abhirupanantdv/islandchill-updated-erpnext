@@ -16,6 +16,7 @@ class EquipmentList(Document):
 
 		area: DF.Link | None
 		equipments: DF.Data | None
+		show_on_app: DF.Check
 	# end: auto-generated types
 
 	pass

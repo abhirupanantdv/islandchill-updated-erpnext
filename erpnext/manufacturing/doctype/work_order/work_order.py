@@ -2397,7 +2397,7 @@ def make_stock_entry(
 	if qty is not None
 	else flt(work_order.qty) - flt(work_order.produced_qty))
 
-	stock_entry.fg_completed_qty = flt(good_completed_qty + extra_goods_qty_converted)
+	stock_entry.fg_completed_qty = flt(good_completed_qty + extra_goods_qty_converted + process_loss_qty)
 
 	if work_order.bom_no:
 		stock_entry.inspection_required = frappe.db.get_value("BOM", work_order.bom_no, "inspection_required")
