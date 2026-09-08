@@ -11,7 +11,6 @@
   "column_break_ifiz",
   "preform_lot_no",
   "closures_lot_no",
-  "bib_inner_bag",
   "analysis_and_results_section",
   "table_kzci",
   "incubation_information_and_result_analysis_section",
@@ -56,11 +55,6 @@
    "fieldname": "closures_lot_no",
    "fieldtype": "Data",
    "label": "Closures Lot No."
-  },
-  {
-   "fieldname": "bib_inner_bag",
-   "fieldtype": "Data",
-   "label": "BIB Inner Bag"
   },
   {
    "fieldname": "analysis_and_results_section",
@@ -136,8 +130,8 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-16 16:36:28.239455",
- "modified_by": "sharda.k@anantdv.com",
+ "modified": "2026-08-25 18:27:47.483055",
+ "modified_by": "sushmita@anantdv.com",
  "module": "Manufacturing",
  "name": "Microbiological Analysis of Primary Raw Materials",
  "owner": "tathagata.c@anantdv.com",

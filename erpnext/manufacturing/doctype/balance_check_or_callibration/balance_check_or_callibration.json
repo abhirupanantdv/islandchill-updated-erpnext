@@ -20,6 +20,7 @@
   "tolerance",
   "section_break_ygrh",
   "cleaning_of_the_balance_done_by",
+  "calibration_verification_status",
   "column_break_cpad",
   "using",
   "section_break_wcvt",
@@ -140,14 +141,20 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Work Order"
+  },
+  {
+   "fieldname": "calibration_verification_status",
+   "fieldtype": "Select",
+   "label": "Calibration Verification Status",
+   "options": "Pass\nFail"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-15 23:12:20.369259",
- "modified_by": "sharda.k@anantdv.com",
+ "modified": "2026-08-25 15:46:23.241907",
+ "modified_by": "sushmita@anantdv.com",
  "module": "Manufacturing",
  "name": "Balance Check or Callibration",
  "owner": "Administrator",

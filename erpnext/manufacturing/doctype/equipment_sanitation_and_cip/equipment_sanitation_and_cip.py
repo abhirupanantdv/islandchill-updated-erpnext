@@ -21,8 +21,10 @@ class equipmentsanitationandcip(Document):
 		date: DF.Date
 		equipmentline_cleaned: DF.Link
 		observations__remarks: DF.SmallText | None
+		operator_name: DF.Data | None
 		performed_by_operator: DF.Link
 		sanitation_result: DF.Literal["", "Satisfactory", "Unsatisfactory"]
+		supervisor_name: DF.Data | None
 		time: DF.Time
 		verified_by_supervisor: DF.Link | None
 		work_order: DF.Data | None

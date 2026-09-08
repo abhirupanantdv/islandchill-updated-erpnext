@@ -15,6 +15,7 @@ class BalanceCheckorCallibration(Document):
 		from frappe.types import DF
 
 		amended_from: DF.Link | None
+		calibration_verification_status: DF.Literal["Pass", "Fail"]
 		checked_by: DF.Link | None
 		cleaning_of_the_balance_done_by: DF.Link | None
 		comments: DF.SmallText | None

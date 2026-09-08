@@ -18,7 +18,6 @@ class MicrobiologicalAnalysisofPrimaryRawMaterials(Document):
 
 		amended_from: DF.Link | None
 		analyst: DF.Link | None
-		bib_inner_bag: DF.Data | None
 		closures_lot_no: DF.Data | None
 		comments: DF.SmallText | None
 		date: DF.Date | None

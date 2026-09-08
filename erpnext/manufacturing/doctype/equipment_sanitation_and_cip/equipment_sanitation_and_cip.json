@@ -8,12 +8,14 @@
  "field_order": [
   "date",
   "performed_by_operator",
+  "operator_name",
   "equipmentline_cleaned",
   "concentration_ppm__",
   "sanitation_result",
   "column_break_yczq",
   "time",
   "verified_by_supervisor",
+  "supervisor_name",
   "chemicalmethod_used",
   "contact_time_mins",
   "section_break_vpvi",
@@ -75,7 +77,7 @@
    "fieldname": "chemicalmethod_used",
    "fieldtype": "Link",
    "label": "Chemical/Method Used",
-   "options": "Chemical Test",
+   "options": "CIP Chemical",
    "reqd": 1
   },
   {
@@ -112,13 +114,25 @@
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fetch_from": "verified_by_supervisor.employee_name",
+   "fieldname": "supervisor_name",
+   "fieldtype": "Data",
+   "label": "Supervisor Name"
+  },
+  {
+   "fetch_from": "performed_by_operator.employee_name",
+   "fieldname": "operator_name",
+   "fieldtype": "Data",
+   "label": "Operator Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-08-24 18:51:50.138354",
+ "modified": "2026-08-27 20:52:16.281977",
  "modified_by": "sushmita@anantdv.com",
  "module": "Manufacturing",
  "name": "equipment sanitation and cip",
