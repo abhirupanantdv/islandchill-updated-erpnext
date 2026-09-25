@@ -8,7 +8,9 @@
  "field_order": [
   "area",
   "equipments",
-  "show_on_app"
+  "show_on_app",
+  "filling_line_1",
+  "filling_line_2"
  ],
  "fields": [
   {
@@ -28,13 +30,25 @@
    "fieldname": "show_on_app",
    "fieldtype": "Check",
    "label": "Show on App"
+  },
+  {
+   "default": "0",
+   "fieldname": "filling_line_1",
+   "fieldtype": "Check",
+   "label": "Filling Line 1"
+  },
+  {
+   "default": "0",
+   "fieldname": "filling_line_2",
+   "fieldtype": "Check",
+   "label": "Filling Line 2"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2026-08-24 18:09:31.042768",
- "modified_by": "sushmita@anantdv.com",
+ "modified": "2026-09-25 20:47:15.204148",
+ "modified_by": "Administrator",
  "module": "Manufacturing",
  "name": "Equipment List",
  "naming_rule": "By fieldname",

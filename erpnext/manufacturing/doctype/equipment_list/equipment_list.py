@@ -16,6 +16,8 @@ class EquipmentList(Document):
 
 		area: DF.Link | None
 		equipments: DF.Data | None
+		filling_line_1: DF.Check
+		filling_line_2: DF.Check
 		show_on_app: DF.Check
 	# end: auto-generated types
 

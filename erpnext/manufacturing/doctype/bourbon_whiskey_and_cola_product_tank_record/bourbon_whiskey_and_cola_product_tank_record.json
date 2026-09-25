@@ -35,9 +35,10 @@
   },
   {
    "fieldname": "tank_no",
-   "fieldtype": "Data",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Tank Number"
+   "label": "Tank Number",
+   "options": "\nTank 1\nTank 2\nTank 3\nTank 4\nTank 5\nTank 6\nTank 7\nTank 8\nTank 9\nTank 10"
   },
   {
    "fieldname": "volume",
@@ -112,8 +113,9 @@
   },
   {
    "fieldname": "gas_level",
-   "fieldtype": "Float",
-   "label": "Gas Level"
+   "fieldtype": "Table",
+   "label": "Gas Level",
+   "options": "Gas Level Reading"
   },
   {
    "fieldname": "comments",
@@ -145,8 +147,8 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-16 16:53:53.591845",
- "modified_by": "sharda.k@anantdv.com",
+ "modified": "2026-09-16 22:41:04.368572",
+ "modified_by": "sushmita@anantdv.com",
  "module": "Manufacturing",
  "name": "Bourbon Whiskey And Cola Product Tank Record",
  "owner": "Administrator",

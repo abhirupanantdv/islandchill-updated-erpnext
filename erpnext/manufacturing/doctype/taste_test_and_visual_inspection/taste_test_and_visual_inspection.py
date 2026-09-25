@@ -12,14 +12,16 @@ class TasteTestandVisualInspection(Document):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from erpnext.manufacturing.doctype.taste_result.taste_result import TasteResult
-		from erpnext.manufacturing.doctype.visual_inspection_table.visual_inspection_table import VisualInspectionTable
+		from frappe.model.document import Document
 		from frappe.types import DF
 
 		amended_from: DF.Link | None
-		taste_test: DF.Table[TasteResult]
-		visual_inspection: DF.Table[VisualInspectionTable]
-		work_order: DF.Data | None
+		approved_by: DF.Link | None
+		form_date: DF.Date | None
+		particle_count_details: DF.Table[Document]
+		revision_date: DF.Date | None
+		revision_no: DF.Data | None
+		taste_test_details: DF.Table[Document]
 	# end: auto-generated types
 
 	pass

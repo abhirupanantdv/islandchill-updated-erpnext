@@ -22,17 +22,16 @@ class MicrobiologiocalAnalysisRawandProductWater(Document):
 		compact_dry_ec: DF.Data | None
 		date_of_analysis: DF.Date | None
 		date_of_product: DF.Date | None
-		hpc_incubation_in: DF.Datetime | None
-		hpc_incubation_out: DF.Datetime | None
-		incubator_no_tcc_and_hpc: DF.Data | None
-		incubator_test_type: DF.Link | None
-		market: DF.Data | None
+		hpc_incubation_in_date_and_time: DF.Datetime | None
+		hpc_incubation_out_date: DF.Datetime | None
+		incubator_no_tcc_and_hpc: DF.Literal["", "1", "2", "3"]
+		market: DF.Literal["", "Local", "Export"]
 		pipette_lot: DF.Data | None
 		product_size: DF.Data | None
 		spc_agar_date: DF.Date | None
 		table_aqat: DF.Table[Microbiologicalsampletable]
-		tcc_incubation_in: DF.Datetime | None
-		tcc_incubation_out: DF.Datetime | None
+		tcc_incubation_in_date_and_time: DF.Datetime | None
+		tcc_incubation_out_date_and_time: DF.Datetime | None
 		vessel: DF.Data | None
 		work_order: DF.Data | None
 	# end: auto-generated types

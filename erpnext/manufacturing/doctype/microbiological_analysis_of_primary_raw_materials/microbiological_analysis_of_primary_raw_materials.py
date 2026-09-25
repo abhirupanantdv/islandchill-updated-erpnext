@@ -12,20 +12,23 @@ class MicrobiologicalAnalysisofPrimaryRawMaterials(Document):
 	from typing import TYPE_CHECKING
 
 	if TYPE_CHECKING:
-		from erpnext.manufacturing.doctype.analysis_and_results_table.analysis_and_results_table import AnalysisandResultsTable
-		from erpnext.manufacturing.doctype.result_analysis_table.result_analysis_table import ResultAnalysisTable
+		from frappe.model.document import Document
 		from frappe.types import DF
 
 		amended_from: DF.Link | None
+		analysis_results: DF.Table[Document]
 		analyst: DF.Link | None
 		closures_lot_no: DF.Data | None
 		comments: DF.SmallText | None
 		date: DF.Date | None
 		date_of_analysis: DF.Date | None
+		incubation_in_date: DF.Datetime | None
+		incubation_out_date: DF.Datetime | None
+		incubator_no: DF.Literal["", "1", "2", "3"]
+		incubator_type: DF.Literal["", "TCC", "E-Coli", "Both"]
 		negative_or_absent_for_coliform_and_ecoli: DF.Data | None
+		overall_result: DF.Literal["", "Pass", "Fail"]
 		preform_lot_no: DF.Data | None
-		table_gdru: DF.Table[ResultAnalysisTable]
-		table_kzci: DF.Table[AnalysisandResultsTable]
 		work_order: DF.Data | None
 	# end: auto-generated types
 

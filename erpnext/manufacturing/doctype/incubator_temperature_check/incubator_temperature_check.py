@@ -14,14 +14,14 @@ class IncubatorTemperatureCheck(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
-		incubator_1: DF.Data | None
-		incubator_2: DF.Data | None
+		check_no: DF.Int
+		incubator_no: DF.Int
 		parent: DF.Data
 		parentfield: DF.Data
 		parenttype: DF.Data
-		remarks: DF.Data | None
+		thermometer_reading: DF.Float
 		time: DF.Time | None
-		time_2: DF.Time | None
+		unit: DF.Literal["", "\u00b0C", "\u00b0F"]
 	# end: auto-generated types
 
 	pass

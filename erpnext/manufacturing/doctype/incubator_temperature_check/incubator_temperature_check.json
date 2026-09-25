@@ -6,51 +6,51 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
+  "check_no",
+  "incubator_no",
   "time",
-  "incubator_1",
-  "time_2",
-  "incubator_2",
-  "remarks"
+  "thermometer_reading",
+  "unit"
  ],
  "fields": [
   {
-   "default": "Now",
    "fieldname": "time",
    "fieldtype": "Time",
    "in_list_view": 1,
    "label": "Time"
   },
   {
-   "fieldname": "incubator_1",
-   "fieldtype": "Data",
+   "fieldname": "check_no",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Incubator No. 1: Thermometer"
+   "label": "Check No."
   },
   {
-   "fieldname": "time_2",
-   "fieldtype": "Time",
+   "fieldname": "incubator_no",
+   "fieldtype": "Int",
    "in_list_view": 1,
-   "label": "Time"
+   "label": "Incubator No."
   },
   {
-   "fieldname": "incubator_2",
-   "fieldtype": "Data",
+   "fieldname": "thermometer_reading",
+   "fieldtype": "Float",
    "in_list_view": 1,
-   "label": "Incubator No. 2: Thermometer"
+   "label": "Thermometer Reading"
   },
   {
-   "fieldname": "remarks",
-   "fieldtype": "Data",
+   "fieldname": "unit",
+   "fieldtype": "Select",
    "in_list_view": 1,
-   "label": "Remarks"
+   "label": "Unit",
+   "options": "\n\u00b0C\n\u00b0F"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-06-08 17:41:06.752898",
- "modified_by": "Administrator",
+ "modified": "2026-09-10 16:59:59.388246",
+ "modified_by": "anantdv@gmail.com",
  "module": "Manufacturing",
  "name": "Incubator Temperature Check",
  "owner": "Administrator",

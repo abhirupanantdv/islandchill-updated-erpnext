@@ -16,6 +16,7 @@ class Microbiologicalsampletable(Document):
 
 		e_coli: DF.Data | None
 		hpc_count: DF.Data | None
+		hpc_count_2: DF.Data | None
 		parent: DF.Data
 		parentfield: DF.Data
 		parenttype: DF.Data

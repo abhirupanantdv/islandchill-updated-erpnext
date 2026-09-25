@@ -11,14 +11,18 @@
   "column_break_ifiz",
   "preform_lot_no",
   "closures_lot_no",
+  "incubation_information_and_results_analysis_section",
+  "incubator_no",
+  "incubator_type",
+  "incubation_in_date",
+  "incubation_out_date",
   "analysis_and_results_section",
-  "table_kzci",
-  "incubation_information_and_result_analysis_section",
-  "table_gdru",
+  "analysis_results",
   "acceptance_parameters_section",
   "negative_or_absent_for_coliform_and_ecoli",
   "signed",
   "date",
+  "overall_result",
   "column_break_cirg",
   "comments",
   "amended_from",
@@ -60,21 +64,6 @@
    "fieldname": "analysis_and_results_section",
    "fieldtype": "Section Break",
    "label": "Analysis and Results"
-  },
-  {
-   "fieldname": "table_kzci",
-   "fieldtype": "Table",
-   "options": "Analysis and Results Table"
-  },
-  {
-   "fieldname": "incubation_information_and_result_analysis_section",
-   "fieldtype": "Section Break",
-   "label": "Incubation Information and Result Analysis"
-  },
-  {
-   "fieldname": "table_gdru",
-   "fieldtype": "Table",
-   "options": "Result Analysis Table"
   },
   {
    "fieldname": "acceptance_parameters_section",
@@ -124,13 +113,52 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Work Order"
+  },
+  {
+   "fieldname": "incubator_no",
+   "fieldtype": "Select",
+   "label": "Incubator No.",
+   "options": "\n1\n2\n3"
+  },
+  {
+   "fieldname": "incubator_type",
+   "fieldtype": "Select",
+   "label": "Incubator Type",
+   "options": "\nTCC\nE-Coli\nBoth"
+  },
+  {
+   "fieldname": "incubation_in_date",
+   "fieldtype": "Datetime",
+   "label": "Incubation In Date & Time"
+  },
+  {
+   "fieldname": "incubation_out_date",
+   "fieldtype": "Datetime",
+   "label": "Incubation Out Date & Time"
+  },
+  {
+   "fieldname": "analysis_results",
+   "fieldtype": "Table",
+   "label": "Analysis Results",
+   "options": "Microbiological Analysis Result"
+  },
+  {
+   "fieldname": "overall_result",
+   "fieldtype": "Select",
+   "label": "Overall Result",
+   "options": "\nPass\nFail"
+  },
+  {
+   "fieldname": "incubation_information_and_results_analysis_section",
+   "fieldtype": "Section Break",
+   "label": "Incubation Information and Results Analysis"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-08-25 18:27:47.483055",
+ "modified": "2026-09-16 16:47:15.063867",
  "modified_by": "sushmita@anantdv.com",
  "module": "Manufacturing",
  "name": "Microbiological Analysis of Primary Raw Materials",

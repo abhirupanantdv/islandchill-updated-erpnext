@@ -16,8 +16,12 @@ class IncubatorTemperatureRecord(Document):
 		from frappe.types import DF
 
 		amended_from: DF.Link | None
+		approved_by: DF.Link | None
 		checked_by: DF.Link | None
+		comments: DF.SmallText | None
 		date: DF.Date | None
+		form_revision_date: DF.Date | None
+		revision_no: DF.Data | None
 		table_wahj: DF.Table[IncubatorTemperatureCheck]
 		verified_by: DF.Link | None
 		work_order: DF.Data | None

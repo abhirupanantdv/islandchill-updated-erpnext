@@ -9,7 +9,8 @@
   "sample",
   "tcc",
   "e_coli",
-  "hpc_count"
+  "hpc_count",
+  "hpc_count_2"
  ],
  "fields": [
   {
@@ -35,16 +36,22 @@
    "fieldname": "hpc_count",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "HPC Count",
+   "label": "HPC Count 1",
    "read_only_depends_on": "eval:doc.sample == \"BH, 0.45um Filter\""
+  },
+  {
+   "fieldname": "hpc_count_2",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "HPC Count 2"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2026-06-01 20:55:03.264754",
- "modified_by": "Administrator",
+ "modified": "2026-09-15 18:37:21.712098",
+ "modified_by": "sushmita@anantdv.com",
  "module": "Manufacturing",
  "name": "Microbiological sample table",
  "owner": "Administrator",

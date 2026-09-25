@@ -5,29 +5,20 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "taste_test",
   "section_break_lepk",
-  "visual_inspection",
-  "amended_from",
-  "section_break_kmij",
-  "work_order"
+  "form_date",
+  "taste_test_details",
+  "particle_count_details",
+  "revision_no",
+  "revision_date",
+  "approved_by",
+  "approval_signature",
+  "amended_from"
  ],
  "fields": [
   {
-   "fieldname": "taste_test",
-   "fieldtype": "Table",
-   "label": "Taste Test",
-   "options": "Taste Result"
-  },
-  {
    "fieldname": "section_break_lepk",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "visual_inspection",
-   "fieldtype": "Table",
-   "label": "Visual Inspection",
-   "options": "Visual Inspection Table"
   },
   {
    "fieldname": "amended_from",
@@ -40,22 +31,51 @@
    "search_index": 1
   },
   {
-   "fieldname": "section_break_kmij",
-   "fieldtype": "Section Break"
+   "fieldname": "form_date",
+   "fieldtype": "Date",
+   "label": "Form Date"
   },
   {
-   "fieldname": "work_order",
+   "fieldname": "taste_test_details",
+   "fieldtype": "Table",
+   "label": "Taste Test Details",
+   "options": "Taste Test Detail"
+  },
+  {
+   "fieldname": "particle_count_details",
+   "fieldtype": "Table",
+   "label": "Particle Count Details",
+   "options": "Particle Count Detail"
+  },
+  {
+   "default": "01",
+   "fieldname": "revision_no",
    "fieldtype": "Data",
-   "hidden": 1,
-   "label": "Work Order"
+   "label": "Revision No."
+  },
+  {
+   "fieldname": "revision_date",
+   "fieldtype": "Date",
+   "label": "Revision Date"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approval_signature",
+   "fieldtype": "Signature",
+   "label": "Approval Signature"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-16 16:49:43.984591",
- "modified_by": "sharda.k@anantdv.com",
+ "modified": "2026-09-10 18:41:56.028616",
+ "modified_by": "anantdv@gmail.com",
  "module": "Manufacturing",
  "name": "Taste Test and Visual Inspection",
  "owner": "tathagata.c@anantdv.com",

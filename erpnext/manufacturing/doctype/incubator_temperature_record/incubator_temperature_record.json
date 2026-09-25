@@ -13,6 +13,11 @@
   "incubator_temperature_record_section",
   "table_wahj",
   "amended_from",
+  "revision_no",
+  "form_revision_date",
+  "comments",
+  "approved_by",
+  "approval_signature",
   "section_break_bsrn",
   "work_order"
  ],
@@ -71,14 +76,41 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Work Order"
+  },
+  {
+   "default": "01",
+   "fieldname": "revision_no",
+   "fieldtype": "Data",
+   "label": "Revision No."
+  },
+  {
+   "fieldname": "comments",
+   "fieldtype": "Small Text",
+   "label": "Comments"
+  },
+  {
+   "fieldname": "form_revision_date",
+   "fieldtype": "Date",
+   "label": "Form Revision Date"
+  },
+  {
+   "fieldname": "approved_by",
+   "fieldtype": "Link",
+   "label": "Approved By",
+   "options": "Employee"
+  },
+  {
+   "fieldname": "approval_signature",
+   "fieldtype": "Signature",
+   "label": "Approval Signature"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2026-07-15 23:11:16.307693",
- "modified_by": "sharda.k@anantdv.com",
+ "modified": "2026-09-10 16:54:19.617735",
+ "modified_by": "anantdv@gmail.com",
  "module": "Manufacturing",
  "name": "Incubator Temperature Record",
  "owner": "Administrator",
