@@ -15,6 +15,7 @@ class EmployeeScreening(Document):
 		from frappe.types import DF
 
 		above_done_by: DF.Link | None
+		amended_from: DF.Link | None
 		blood_pressure: DF.Data | None
 		comments: DF.SmallText | None
 		date: DF.Date | None

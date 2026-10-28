@@ -17,6 +17,7 @@ class InjuryReport(Document):
 
 		activity_being_performed: DF.SmallText | None
 		agency_of_accidentincidentdisease: DF.Data | None
+		amended_from: DF.Link | None
 		apprentice: DF.Check
 		body_location_of_injury: DF.Data | None
 		both_training_types: DF.Check

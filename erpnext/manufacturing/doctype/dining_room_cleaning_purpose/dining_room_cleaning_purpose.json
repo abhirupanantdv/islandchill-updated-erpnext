@@ -6,7 +6,8 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "cleaning_purpose"
+  "cleaning_purpose",
+  "amended_from"
  ],
  "fields": [
   {
@@ -14,12 +15,23 @@
    "fieldtype": "Data",
    "label": "Cleaning Purpose",
    "unique": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Dining Room Cleaning Purpose",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-06-08 20:17:16.729474",
+ "modified": "2026-10-28 21:41:56.559888",
  "modified_by": "Administrator",
  "module": "Manufacturing",
  "name": "Dining Room Cleaning Purpose",
@@ -27,6 +39,7 @@
  "owner": "Administrator",
  "permissions": [
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -36,6 +49,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

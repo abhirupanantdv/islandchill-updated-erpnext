@@ -118,7 +118,8 @@
   "date_of_resumption_of_work",
   "column_break_oauh",
   "total_working_days_lost",
-  "tab_2_tab"
+  "tab_2_tab",
+  "amended_from"
  ],
  "fields": [
   {
@@ -708,18 +709,30 @@
    "fieldname": "total_working_days_lost",
    "fieldtype": "Int",
    "label": "Total Working Days Lost"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Injury Report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-06-03 21:37:10.705283",
- "modified_by": "sharda.k@anantdv.com",
+ "modified": "2026-10-28 21:41:10.543260",
+ "modified_by": "Administrator",
  "module": "Manufacturing",
  "name": "Injury Report",
  "owner": "sharda.k@anantdv.com",
  "permissions": [
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -729,6 +742,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

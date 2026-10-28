@@ -8,7 +8,8 @@
  "field_order": [
   "cleaning_purpose",
   "section_break_zedm",
-  "work_order"
+  "work_order",
+  "amended_from"
  ],
  "fields": [
   {
@@ -26,19 +27,31 @@
    "fieldtype": "Data",
    "hidden": 1,
    "label": "Work Order"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Lab and Office Cleaning Purpose",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2026-07-15 23:10:08.632507",
- "modified_by": "sharda.k@anantdv.com",
+ "modified": "2026-10-28 21:41:57.042938",
+ "modified_by": "Administrator",
  "module": "Manufacturing",
  "name": "Lab and Office Cleaning Purpose",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
  "permissions": [
   {
+   "cancel": 1,
    "create": 1,
    "delete": 1,
    "email": 1,
@@ -48,6 +61,7 @@
    "report": 1,
    "role": "System Manager",
    "share": 1,
+   "submit": 1,
    "write": 1
   }
  ],

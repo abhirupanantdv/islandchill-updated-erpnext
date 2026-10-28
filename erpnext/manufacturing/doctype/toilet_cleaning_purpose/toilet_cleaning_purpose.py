@@ -14,6 +14,7 @@ class ToiletCleaningpurpose(Document):
 	if TYPE_CHECKING:
 		from frappe.types import DF
 
+		amended_from: DF.Link | None
 		cleaning_purpose: DF.Data | None
 		work_order: DF.Data | None
 	# end: auto-generated types
